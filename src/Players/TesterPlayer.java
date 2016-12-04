@@ -48,6 +48,8 @@ public class TesterPlayer extends Player{
 			type = GameInfo.TIGER;
 		else if(type == 'c')
 			type = GameInfo.CROCODILE;
+		else if(type == 'g')
+			type = GameInfo.GOAT;
 		
 		return new MeeplePlacement(type, sc.nextInt());
 	}

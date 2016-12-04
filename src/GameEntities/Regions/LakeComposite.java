@@ -12,6 +12,7 @@ public class LakeComposite {
 	int prey;
 	int score;
 	public int crocodiles;
+	public int goats = 0;
 	int totalTigers = 0;
 	public HashMap<Player, Integer> tigerCount = new HashMap<Player, Integer>();
 	List<Lake> components;

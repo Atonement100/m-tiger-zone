@@ -27,6 +27,7 @@ public abstract class Player {
 	protected Board mainBoard;
 	protected int score = 0;
 	protected int crocodiles;
+	protected int goats;
 	protected List<Tiger> currentTigers;
 	
 	//Default Constructor
@@ -39,6 +40,7 @@ public abstract class Player {
 		this.globalDeck = deck;
 		this.mainBoard = mainBoard;
 		crocodiles = GameInfo.MAX_CROCS;
+		this.goats = GameInfo.MAX_GOATS;
 		currentTigers = new LinkedList<Tiger>();
 		
 		//Create Tigers
@@ -107,6 +109,13 @@ public abstract class Player {
 			if(crocodiles != 0)
 				tile.placeCrocodile();
 				crocodiles--;
+		}
+		else if(mp != null && mp.type == GameInfo.GOAT && !tile.hasGoat){
+			if (goats > 0){
+				tile.placeGoat();
+				goats--;
+			}
+
 		}
 		
 		for(Region r : tile.getRegions()){

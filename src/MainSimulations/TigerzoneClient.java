@@ -68,6 +68,7 @@ public static void main(String[] args) {
     int cid; // current challenge ID
     String gid; // game ID when parsing server messages
     String pid; // player ID when parsing
+    String oid = "o";
     int moveNumber; // number of the move sent by the server
 
     // Possible states
@@ -465,6 +466,12 @@ public static void main(String[] args) {
                 //  0     1    2     3     4      5       6      7      8
                 // GAME OVER, just waiting here...
                 //
+                if (tokens[3].equals("SEND")){
+                    toServer = "GAME " + gidGameA + " OVER PLAYER " + username + " " + gameA.player1.getScore() + " PLAYER " + opponentName + " " + gameA.player2.getScore();
+                    adapter.sendMessage(toServer);
+                    toServer = "GAME " + gidGameB + " OVER PLAYER " + username + " " + gameB.player1.getScore() + " PLAYER " + opponentName + " " + gameB.player2.getScore();
+                    adapter.sendMessage(toServer);
+                }
             }
             else if (tokens[0].equals("END") || tokens[0].equals("PLEASE"))
             {

@@ -14,6 +14,7 @@ public class TrailComposite {
 	int score; //maybe
 	public int ends;
 	int totalTigers = 0;
+	public int goats = 0;
 	public HashMap<Player, Integer> tigerCount = new HashMap<Player, Integer>();
 	List<Trail> components;
 	List<Integer> tiles;

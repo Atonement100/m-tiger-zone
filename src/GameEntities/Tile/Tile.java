@@ -18,6 +18,7 @@ public class Tile {
 	public int prey;
 	public boolean hasCrocodile = false;
 	public boolean hasTiger = false;
+	public boolean hasGoat = false;
 	private int rotation = 0;
 	private int angle = 0;
 	private String type;
@@ -102,6 +103,16 @@ public class Tile {
 		}
 		
 		hasCrocodile = true;
+	}
+
+	public void placeGoat(){
+		for(Region r : regionPositions){
+			if(r instanceof Lake) { ((Lake) r).getComp().goats++; }
+
+			else if(r instanceof Trail) { ((Trail) r).getComp().goats++; }
+		}
+
+		hasGoat = true;
 	}
 
 	public boolean checkValid(List<Edge> e){

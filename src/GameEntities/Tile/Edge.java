@@ -5,7 +5,7 @@ import java.util.List;
 import GameEntities.Regions.Region;
 
 /*
- * Possible Tile implementation to account for weird shit in the corners.
+ * Possible Tile implementation to account for weird stuff in the corners.
  */
 
 public class Edge {

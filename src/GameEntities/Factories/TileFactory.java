@@ -369,13 +369,14 @@ public class TileFactory  extends GameInfo implements Factory<Tile>{
 				r2 = new Lake(3, tileCount, false, NONE);
 				r4 = new Trail(false, tileCount, false, NONE);
 				r8 = new Lake(3, tileCount, false, NONE);
-				r1 = new Jungle((Lake) r2); r3 = new Jungle((Lake) r2);
-				r7 = new Jungle((Lake) r8); r9 = new Jungle((Lake) r8);
-				edges.add(new Edge(r1,r2,r3));	//TOP
-				edges.add(new Edge(r4));		//RIGHT
-				edges.add(new Edge(r7,r8,r9));	//BOTTOM
-				edges.add(new Edge(r4));		//LEFT
+				r1 = new Jungle((Lake) r2);
+				r7 = new Jungle((Lake) r8);
+				edges.add(new Edge(r2));	//TOP
+				edges.add(new Edge(r1, r4, r7));		//RIGHT
+				edges.add(new Edge(r8));	//BOTTOM
+				edges.add(new Edge(r7, r4, r1));		//LEFT
 				return assemble(type, NONE, edges, new Region[]{r1, r2, r1, r4, r4, r4, r7, r8, r7});
+
 		}
 		return null;
 	}

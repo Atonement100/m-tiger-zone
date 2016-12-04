@@ -39,11 +39,13 @@ public class GameInfo {
 	public static final String LLLLN="LLLL-", JLLLN="JLLL-", LLJJN="LLJJ-", JLJLN="JLJL-", LJLJN="LJLJ-", LJJJN="LJJJ-", JLLJN="JLLJ-";
 	public static final String TLJTN="TLJT-", TLJTP="TLJTP", JLTTB="JLTTB", JLTTN="JLTT-", TLTJN="TLTJ-", TLTJD="TLTJD", TLLLN="TLLL-";
 	public static final String TLTTN="TLTT-", TLTTP="TLTTP", TLLTN="TLLT-", TLLTB="TLLTB", LJTJN="LJTJ-", LJTJD="LJTJD", TLLLC="TLLLC";
+	public static final String LTLTN="LTLT-";
 	
 	//Array Representation of Tiles
 	public static final String[] allowedTiles = new String[]{
 			"JJJJ-", "JJJJX", "JJTJX", "TTTT-", "TJTJ-", "TJJT-", "TJTT-", "LLLL-", "JLLL-", "LLJJ-", "JLJL-", "LJLJ-", "LJJJ-", "JLLJ-",
-			"TLJT-", "TLJTP", "JLTTB", "JLTT-", "TLTJ-", "TLTJD", "TLLL-", "TLTT-", "TLTTP", "TLLT-", "TLLTB", "LJTJ-", "LJTJD", "TLLLC"
+			"TLJT-", "TLJTP", "JLTTB", "JLTT-", "TLTJ-", "TLTJD", "TLLL-", "TLTT-", "TLTTP", "TLLT-", "TLLTB", "LJTJ-", "LJTJD", "TLLLC",
+			"LTLT-"
 	};
 }
 

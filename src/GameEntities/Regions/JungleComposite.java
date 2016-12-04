@@ -11,6 +11,7 @@ public class JungleComposite {
 	int prey;
 	int score;
 	int totalTigers = 0;
+	int goats = 0;
 	HashMap<Player, Integer> tigerCount = new HashMap<Player, Integer>();
 	public List<Tiger> placedTigers;
 	List<Jungle> components;

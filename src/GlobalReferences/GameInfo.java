@@ -20,11 +20,11 @@ public class GameInfo {
 	public static final int[] SHIFT = {1,0,  -1,0,  0,1,  0,-1};
 	
 	//Preys, zero if it has no prey, 1 if deer, 2 if boar and 3 if buffalo 
-	public static final int NONE = -1, DEER = 0, BOARD = 1, BUFFALO = 2, CROCODILE = 3, TIGER = 4;
+	public static final int NONE = -1, DEER = 0, BOARD = 1, BUFFALO = 2, CROCODILE = 3, TIGER = 4, GOAT = 10;
 	
 	
 	//Maximum number of Meeples allowed per type
-	public static final int MAX_CROCS = 2, MAX_TIGERS = 7, MAX_TYPES = 29, MAX_ZONES = 9;
+	public static final int MAX_CROCS = 2, MAX_TIGERS = 7, MAX_GOATS = 3, MAX_TYPES = 29, MAX_ZONES = 9;
 	
 	//Frame's proportions for UI
 	public static final int WIDTH = 800, HEIGHT = 800;
